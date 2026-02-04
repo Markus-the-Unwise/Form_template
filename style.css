@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+/* debug border */
+div {
+    border: solid black 2px;
+}
+
+div>div {
+    border: solid blue 2px;
+}
+
+div>div>div {
+    border-color: red
+}
+
+/* Actual stuff */
+.container {
+    display: flex;
+}
+
+.left {
+    height: 100vh;
+    width: 30%;
+}
+
+.right {
+    height: 100vh;
+    width: 70%;
+}
+
+.logo {
+    position: fixed;
+    width: 100%;
+}

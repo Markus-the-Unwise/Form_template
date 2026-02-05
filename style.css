@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* debug border */
@@ -22,15 +23,48 @@ div>div>div {
 
 .left {
     height: 100vh;
-    width: 30%;
+    width: max(30%, 300px);
+    background: no-repeat url(./halie-west-25xggax4bSA-unsplash.jpg) center/cover;
+    color: white;
+    position: relative;
+
 }
 
 .right {
     height: 100vh;
-    width: 70%;
+    /* width: 65%; */
+    flex-grow: 1;
 }
 
 .logo {
-    position: fixed;
+    position: relative;
+    display: flex;
+    top: 30%;
     width: 100%;
+    font-size: 2.5rem;
+    height: 3em;
+    text-align: center;
+    background: #00000079;
+}
+
+.logo>* {
+    margin: auto;
+}
+
+.logo>span {
+    margin-left: 0;
+}
+
+.logoImage {
+    height: 100%;
+    width: auto;
+    margin-right: 0;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
